@@ -152,15 +152,24 @@
     color:var(--ink-soft);
     margin-bottom:1.3rem;
   }
-  .cv-entry{
+  .cv-entry{ margin:0; }
+  .cv-entry + .cv-entry{ margin-top:1.5rem; }
+  .cv-title{
     font-family:'Cormorant Garamond', serif;
-    font-weight:400;
+    font-weight:500;
     font-size:17px;
-    line-height:1.7;
-    color:var(--ink-body);
-    margin:0;
+    line-height:1.4;
+    color:var(--ink);
   }
-  .cv-entry + .cv-entry{ margin-top:.5rem; }
+  .cv-meta{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:14px;
+    line-height:1.5;
+    color:var(--ink-soft);
+    margin-top:.25rem;
+  }
 
   /* ---------- footer (identical to the main page) ---------- */
   footer{
@@ -205,7 +214,8 @@
     .about-tagline{ font-size:13px; }
     .cv-section{ margin-top:10vh; }
     .cv-group{ margin-top:3rem; }
-    .cv-entry{ font-size:16px; }
+    .cv-title{ font-size:16px; }
+    .cv-meta{ font-size:13px; }
     footer .links a{ display:inline-block; margin:.4rem .6rem; }
   }
 </style>
@@ -240,18 +250,36 @@
   <section class="cv-section">
     <div class="cv-group first">
       <div class="cv-label">Selected Exhibitions</div>
-      <p class="cv-entry">Mirrors &amp; Portals — Solo Exhibition, WASUKA Gallery, Singapore — August 2025</p>
-      <p class="cv-entry">Group Exhibition, WASUKA Gallery, Singapore — 2024</p>
-      <p class="cv-entry">RE:PLAY: A Nostalgic Art Exhibition Celebrating Recycling, Art, and Technology — SCAPE Youth Park, Singapore — 2023</p>
+      <div class="cv-entry">
+        <p class="cv-title">Mirrors &amp; Portals</p>
+        <p class="cv-meta">Solo Exhibition, WASUKA Gallery, Singapore, August 2025</p>
+      </div>
+      <div class="cv-entry">
+        <p class="cv-title">Group Exhibition</p>
+        <p class="cv-meta">WASUKA Gallery, Singapore, 2024</p>
+      </div>
+      <div class="cv-entry">
+        <p class="cv-title">RE:PLAY: A Nostalgic Art Exhibition Celebrating Recycling, Art, and Technology</p>
+        <p class="cv-meta">SCAPE Youth Park, Singapore, 2023</p>
+      </div>
     </div>
     <div class="cv-group">
       <div class="cv-label">Residencies</div>
-      <p class="cv-entry">Quarantine Residency — Lazaretto Island, Menorca — 2025</p>
-      <p class="cv-entry">Avaissance Artist-in-Residence — Global — 2023</p>
+      <div class="cv-entry">
+        <p class="cv-title">Quarantine Residency</p>
+        <p class="cv-meta">Lazaretto Island, Menorca, 2025</p>
+      </div>
+      <div class="cv-entry">
+        <p class="cv-title">Avaissance Artist-in-Residence</p>
+        <p class="cv-meta">Global, 2023</p>
+      </div>
     </div>
     <div class="cv-group">
       <div class="cv-label">Awards</div>
-      <p class="cv-entry">People's Choice Award — PleinAir Salon Art Competition — 2023</p>
+      <div class="cv-entry">
+        <p class="cv-title">People's Choice Award</p>
+        <p class="cv-meta">PleinAir Salon Art Competition, 2023</p>
+      </div>
     </div>
   </section>
 
