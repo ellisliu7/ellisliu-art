@@ -135,6 +135,33 @@
     margin-top:1.6rem;
   }
 
+  /* ---------- selected exhibitions / residencies / awards ---------- */
+  .cv-section{
+    max-width:var(--measure);
+    margin:16vh auto 0;
+    padding:0 2rem;
+  }
+  .cv-group{ margin-top:4rem; }
+  .cv-group.first{ margin-top:0; }
+  .cv-label{
+    font-family:'Inter', sans-serif;
+    font-weight:500;
+    font-size:11px;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:1.3rem;
+  }
+  .cv-entry{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:400;
+    font-size:17px;
+    line-height:1.7;
+    color:var(--ink-body);
+    margin:0;
+  }
+  .cv-entry + .cv-entry{ margin-top:.5rem; }
+
   /* ---------- footer (identical to the main page) ---------- */
   footer{
     max-width:var(--measure);
@@ -176,6 +203,9 @@
     .about-section{ margin-top:10vh; }
     .about-lead{ font-size:17px; }
     .about-tagline{ font-size:13px; }
+    .cv-section{ margin-top:10vh; }
+    .cv-group{ margin-top:3rem; }
+    .cv-entry{ font-size:16px; }
     footer .links a{ display:inline-block; margin:.4rem .6rem; }
   }
 </style>
@@ -207,11 +237,29 @@
     </div>
   </section>
 
+  <section class="cv-section">
+    <div class="cv-group first">
+      <div class="cv-label">Selected Exhibitions</div>
+      <p class="cv-entry">Mirrors &amp; Portals — Solo Exhibition, WASUKA Gallery, Singapore — August 2025</p>
+      <p class="cv-entry">Group Exhibition, WASUKA Gallery, Singapore — 2024</p>
+      <p class="cv-entry">RE:PLAY: A Nostalgic Art Exhibition Celebrating Recycling, Art, and Technology — SCAPE Youth Park, Singapore — 2023</p>
+    </div>
+    <div class="cv-group">
+      <div class="cv-label">Residencies</div>
+      <p class="cv-entry">Quarantine Residency — Lazaretto Island, Menorca — 2025</p>
+      <p class="cv-entry">Avaissance Artist-in-Residence — Global — 2023</p>
+    </div>
+    <div class="cv-group">
+      <div class="cv-label">Awards</div>
+      <p class="cv-entry">People's Choice Award — PleinAir Salon Art Competition — 2023</p>
+    </div>
+  </section>
+
   <footer>
     <p class="links">
-      <a href="../">Original Artworks</a>
-      <a href="https://ellisliu.art" target="_blank" rel="noopener">Portfolio</a>
-      <a href="https://ancienttemenos.art" target="_blank" rel="noopener">Ancient Temenos</a>
+      <a href="https://www.instagram.com/ellisliu.art/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/ellisliu9" target="_blank" rel="noopener">X</a>
+      <a href="mailto:ellisliu91@gmail.com">Email</a>
     </p>
     <p class="copyright">© Ellis Liu 2026</p>
   </footer>
